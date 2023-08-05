@@ -1,0 +1,48 @@
+@mixin btn-style {
+    height: 46px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(180deg, #4ADFFC, #22B1CC);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500px;
+    box-shadow: 0 1px 1px 1px #1B98B0;
+    &:hover {
+        transition: 0.4s all;
+        background: #fff;
+        color: #1EACC7;
+    }
+    &:active {
+        color: #fff;
+        background: linear-gradient(180deg, #4ADFFC, #22B1CC);
+    }
+}
+@mixin label-style {
+    height: 27px;
+    width: 115px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin: 0 auto;
+}
+@mixin title-style {
+    font-size: 38px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+    @media (max-width:991px){
+        font-size: 31px;
+    }
+}
+@mixin title-descr-style {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+}
